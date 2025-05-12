@@ -26,7 +26,7 @@ class CounterClass extends Component {
             <header className={classes['App-header']}>
                 <h1>Counter App</h1>
                 {
-                <h1 className={classes['greet-container']}>
+                <h1 className={classes['paragraph']}>
                     {this.state.count <= 5 ? <span> count is smaller than 5</span> : <span> count is bigger than 5</span>}
                 </h1>
                 }

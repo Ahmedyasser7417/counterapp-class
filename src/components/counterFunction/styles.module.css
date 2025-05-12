@@ -1,11 +1,11 @@
-.counter-container {
+.counterContainer {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-button {
+.button {
     padding: 10px 20px;
     font-size: 24px;
     cursor: pointer;
@@ -16,7 +16,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.button:hover {
     background-color: #4fa8c7;
 }
 
@@ -24,17 +24,15 @@ button:hover {
     font-size: 48px;
     font-weight: bold;
     min-width: 100px;
-    margin: 20px;
 }
 
-.App-header {
+.header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
 }
 
