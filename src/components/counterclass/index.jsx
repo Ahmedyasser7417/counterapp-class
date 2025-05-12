@@ -21,10 +21,16 @@ class CounterClass extends Component {
         }));
     }
 
+    reset = () => {
+        this.setState({
+            count: 0
+        });
+    }
+
     render() {
         return (
             <header className={classes['App-header']}>
-                <h1>Counter App</h1>
+                <h1>Counter App With Class</h1>
                 {
                 <h1 className={classes['paragraph']}>
                     {this.state.count <= 5 ? <span> count is smaller than 5</span> : <span> count is bigger than 5</span>}
@@ -34,6 +40,7 @@ class CounterClass extends Component {
                     <button onClick={this.decrement}>-</button>
                     <span className={classes.counter}>{this.state.count}</span>
                     <button onClick={this.increment}>+</button>
+                    <button onClick={this.reset}>Reset</button>
                 </div>
             </header>
         );

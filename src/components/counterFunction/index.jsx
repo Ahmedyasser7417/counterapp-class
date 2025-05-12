@@ -18,7 +18,7 @@ const CounterFunction = () => {
 
     return (
         <header className={classes.header}>
-            <h1>Counter App</h1>
+            <h1>Counter App With Function</h1>
             {
                 <h1 className={classes.paragraph}>
                     {count <= 5 ? <span> count is smaller than 5</span> : <span> count is bigger than 5</span>}
@@ -28,7 +28,7 @@ const CounterFunction = () => {
                 <button className={classes.button} onClick={decrement}>-</button>
                 <span className={classes.counter}>{count}</span>
                 <button className={classes.button} onClick={increment}>+</button>
-                <button onClick={reset}>Reset</button>
+                <button className={classes.button} onClick={reset}>Reset</button>
             </div>
         </header>
     );
